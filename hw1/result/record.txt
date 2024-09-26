@@ -1,0 +1,42 @@
+# regression data
+hidden layer: 10*10
+
+train data shape: (576, 16) , (576, 1)
+epoch 1000 loss : 5744.552104018747
+epoch 2000 loss : 4713.002756900847
+epoch 3000 loss : 4272.006256327539
+Train RMS Error: 2.735003059442172
+Test RMS Error: 2.914477191109333
+
+# 刪除特定input的訓練和測試誤差
+第幾筆輸入   train_error test_error
+沒刪          2.8358      2.9647
+1            2.7496      2.7032
+2            2.9711      3.2430
+3            3.0644      3.0375     (影響第三大)
+4            2.7663      2.8294
+5            2.7971      2.8472
+6            2.8239      2.7540
+7            3.2130      3.4557     (影響第二大)
+8            4.6583       4.5092    (影響最大)
+
+
+# classification data
+hidden layer: 24*16
+
+# train Error
+epoch=390
+Train Error Rate: 0.014285714285714285
+Test Error Rate: 0.05714285714285714
+
+epoch=10
+Train Error Rate: 0.16071428571428573
+Test Error Rate: 0.18571428571428572
+
+epoch=100
+Train Error Rate: 0.0035714285714285713
+Test Error Rate: 0.07142857142857142
+
+epoch=2000
+Train Error Rate: 0.0
+Test Error Rate: 0.1
